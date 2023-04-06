@@ -194,6 +194,16 @@
 
 
     /*----------------
+        Block head
+    ----------------*/
+    .block_head .title br.mob
+    {
+        display: block;
+    }
+
+
+
+    /*----------------
         Typography
     ----------------*/
     .text_block
@@ -487,13 +497,9 @@
     {
         top: -38px;
 
-        margin-right: -88px;
-    }
-
-
-    .block_head .title br
-    {
-        display: none;
+        width: 142px;
+        height: 211px;
+        margin-right: -77px;
     }
 
 

@@ -1364,6 +1364,11 @@ header .menu li a:hover
     display: block;
 }
 
+.block_head .title br.mob
+{
+    display: none;
+}
+
 
 .block_head.center
 {

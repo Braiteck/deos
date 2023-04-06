@@ -455,6 +455,18 @@
 
 
 
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .block_head:before
+    {
+        width: 130px;
+        height: 196px;
+        margin-right: -68px;
+    }
+
+
+
     /*-------------------
         Contacts info
     -------------------*/
