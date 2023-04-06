@@ -1,0 +1,654 @@
+@media print,
+(max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 32px;
+    }
+
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction
+    {
+        bottom: -32px;
+        left: 0;
+
+        width: 100%;
+
+        justify-content: center;
+    }
+
+
+    .block
+    {
+        margin-bottom: 60px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+    .fancybox__content > .carousel__button.is-close
+    {
+        top: -10px;
+        right: -10px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .data
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header .contacts
+    {
+        display: none;
+    }
+
+
+    .mob_header .order_btn
+    {
+        padding: 6px 16px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 36px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns
+    {
+        --form_columns_offset: 16px;
+    }
+
+
+    .form .file
+    {
+        margin-top: 0;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 23px;
+    }
+
+
+    .text_block h1
+    {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .text_block h2
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .text_block h3
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .text_block h4
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+    .text_block * + h2,
+    .text_block * + h3,
+    .text_block * + h4
+    {
+        margin-top: 48px;
+    }
+
+
+    .text_block blockquote
+    {
+        line-height: 25px;
+
+        padding: 20px;
+    }
+
+
+    .text_block ul li + li
+    {
+        margin-top: 8px;
+    }
+
+    .text_block ul li:before
+    {
+        top: 6px;
+    }
+
+
+    .text_block .video_link:before
+    {
+        background-size: 92px 92px;
+    }
+
+
+    .text_block .columns
+    {
+        column-gap: 0;
+        column-count: 1;
+    }
+
+
+    .text_block ol li:before
+    {
+        top: 0;
+    }
+
+    .text_block ol li + li
+    {
+        margin-top: 8px !important;
+    }
+
+
+    .text_block table
+    {
+        width: 600px;
+    }
+
+
+    .text_block .quote .photo
+    {
+        width: 124px;
+        height: 124px;
+    }
+
+    .text_block .quote .photo:after
+    {
+        right: -12px;
+        bottom: -12px;
+
+        width: 60px;
+        height: 48px;
+    }
+
+    .text_block .quote .photo + *
+    {
+        width: calc(100% - 152px);
+    }
+
+
+    .text_block .quote .author
+    {
+        margin-top: 20px;
+    }
+
+
+    .text_block .single_slider .controls
+    {
+        bottom: -16px;
+
+        transform: scale(.75);
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider
+    {
+        margin-bottom: 88px;
+    }
+
+
+    .main_slider .swiper
+    {
+        overflow: visible !important;
+    }
+
+
+    .main_slider .cont
+    {
+        min-height: 0;
+        padding-bottom: 32px;
+    }
+
+
+    .main_slider .data
+    {
+        width: 100%;
+    }
+
+
+    .main_slider .title
+    {
+        font-size: 36px;
+        line-height: 68px;
+    }
+
+    .main_slider .title span
+    {
+        font-size: 100px;
+        line-height: 68px;
+    }
+
+
+    .main_slider .desc
+    {
+        line-height: 23px;
+    }
+
+
+    .main_slider .image
+    {
+        position: relative;
+        right: 0;
+
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .main_slider .image:before
+    {
+        display: none;
+    }
+
+
+    .main_slider .image img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .stocks .stock
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+    .stocks .stock .thumb
+    {
+        width: 168px;
+        height: 168px;
+
+        border-width: 8px;
+    }
+
+    .stocks .stock .thumb img
+    {
+        width: calc(100% + 76px);
+        height: calc(100% + 52px);
+    }
+
+
+    .stocks .stock .thumb .btn
+    {
+        line-height: 34px;
+
+        display: none;
+
+        width: 112px;
+        height: 36px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .title
+    {
+        font-size: 24px;
+    }
+
+
+    .action_form .form
+    {
+        width: 100%;
+    }
+
+
+    .action_form .form .submit
+    {
+        width: 50%;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row
+    {
+        margin-bottom: -40px;
+    }
+
+    .advantages .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 40px;
+    }
+
+
+    .advantages .item
+    {
+        line-height: 23px;
+
+        display: block;
+
+        text-align: center;
+    }
+
+
+    .advantages .item .icon
+    {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .advantages .item .icon img
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services
+    {
+        padding: 60px 0;
+    }
+
+
+    .services .bg
+    {
+        width: 100%;
+    }
+
+
+    .services .service
+    {
+        line-height: 23px;
+    }
+
+
+
+    /*------------------
+        Achievements
+    ------------------*/
+    .achievements
+    {
+        padding: 60px 0;
+    }
+
+
+    .achievements .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .achievements .item
+    {
+        line-height: 23px;
+    }
+
+
+    .achievements .item .val
+    {
+        font-size: 52px;
+
+        margin-bottom: 12px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .title
+    {
+        line-height: 32px;
+    }
+
+
+    .contacts_info .data .location,
+    .contacts_info .data .socials
+    {
+        margin-top: 24px;
+    }
+
+
+    .contacts_info .form .line
+    {
+        margin-bottom: 16px;
+    }
+
+    .contacts_info .form .submit_btn
+    {
+        width: 100%;
+    }
+
+
+    .contacts_info #map
+    {
+        height: 360px;
+        margin-top: 60px;
+    }
+
+
+
+    /*---------------------
+        Services slider
+    ---------------------*/
+    .services_slider
+    {
+        margin-bottom: 88px;
+    }
+
+
+    .services_slider .swiper
+    {
+        overflow: visible !important;
+    }
+
+
+    .services_slider .cont
+    {
+        min-height: 0;
+        padding-bottom: 32px;
+    }
+
+
+    .services_slider .data
+    {
+        width: 100%;
+    }
+
+
+    .services_slider .title
+    {
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+
+    .services_slider .link a
+    {
+        font-size: 14px;
+        line-height: 44px;
+    }
+
+
+    .services_slider .image
+    {
+        position: relative;
+        right: 0;
+
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .services_slider .image:before
+    {
+        display: none;
+    }
+
+
+    .services_slider .image img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles
+    {
+        padding: 60px 0;
+    }
+
+
+    .articles .article
+    {
+        line-height: 23px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 48px 0 24px;
+    }
+
+
+    footer .menu
+    {
+        display: none;
+    }
+
+
+    footer .logo
+    {
+        position: relative;
+        top: 0;
+
+        width: 100%;
+        margin-bottom: 28px;
+    }
+
+    footer .logo img
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    footer .privacy_policy_link
+    {
+        width: 100%;
+        margin-top: 16px;
+        margin-left: 0;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 40px 30px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 26px;
+        line-height: 32px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .modal .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .modal .form .line
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .modal .form .agree
+    {
+        margin-top: 0;
+    }
+
+
+    .modal .form .submit_btn
+    {
+        width: 100%;
+    }
+}

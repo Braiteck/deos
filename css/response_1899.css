@@ -1,0 +1,290 @@
+@media print,
+(max-width: 1899px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction
+    {
+        left: 32px;
+
+        margin: 0;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .col
+    {
+        width: calc(50% - 160px);
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 68px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .slider .swiper-pagination
+    {
+        display: flex !important;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .cont
+    {
+        min-height: 600px;
+    }
+
+
+    .main_slider .data
+    {
+        width: 620px;
+        padding-left: 60px;
+    }
+
+
+    .main_slider .title
+    {
+        font-size: 60px;
+        line-height: 116px;
+    }
+
+    .main_slider .title span
+    {
+        font-size: 168px;
+        line-height: 116px;
+
+        margin-left: -12px;
+    }
+
+
+    .main_slider .desc
+    {
+        font-size: 22px;
+        line-height: 32px;
+
+        margin-top: 24px;
+    }
+
+
+    .main_slider .image:before
+    {
+        background-position: -200px 0;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .swiper-pagination
+    {
+        display: flex !important;
+    }
+
+
+    .stocks .stock
+    {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+
+    .stocks .stock .thumb
+    {
+        width: 320px;
+        height: 320px;
+        margin-bottom: 40px;
+    }
+
+
+    .stocks .stock .thumb .btn
+    {
+        font-size: 15px;
+        line-height: 44px;
+
+        width: 140px;
+        height: 46px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form
+    {
+        padding: 60px 0;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .item .icon
+    {
+        margin-right: 24px;
+    }
+
+    .advantages .item .icon img
+    {
+        width: 70px;
+        height: 70px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services
+    {
+        padding: 80px 0;
+    }
+
+
+    .services .row
+    {
+        margin-bottom: -40px;
+        margin-left: -24px;
+    }
+
+    .services .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 40px;
+        margin-left: 24px;
+    }
+
+
+
+    /*------------------
+        Achievements
+    ------------------*/
+    .achievements
+    {
+        padding: 80px 0 100px;
+    }
+
+
+    .achievements .row
+    {
+        margin-bottom: -40px;
+        margin-left: -24px;
+        padding-top: 4px;
+    }
+
+    .achievements .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 40px;
+        margin-left: 24px;
+    }
+
+
+    .achievements .item .val
+    {
+        font-size: 72px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .text_block
+    {
+        width: 764px;
+    }
+
+
+    .about_info .image
+    {
+        width: 545px;
+        margin-right: -715px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data
+    {
+        width: 521px;
+    }
+
+
+
+    /*---------------------
+        Services slider
+    ---------------------*/
+    .services_slider .cont
+    {
+        min-height: 600px;
+    }
+
+
+    .services_slider .data
+    {
+        width: 620px;
+        padding-left: 60px;
+    }
+
+
+    .services_slider .title
+    {
+        font-size: 64px;
+        line-height: 68px;
+    }
+
+
+    .services_slider .image:before
+    {
+        background-position: -400px 0;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles
+    {
+        padding: 80px 0;
+    }
+
+
+    .articles .row
+    {
+        margin-bottom: -40px;
+        margin-left: -24px;
+    }
+
+    .articles .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 40px;
+        margin-left: 24px;
+    }
+}

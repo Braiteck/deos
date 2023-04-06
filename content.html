@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.png">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#f6e924">
+		<meta name="theme-color" content="#f6e924">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1899.css" media="print, (max-width: 1899px)" async>
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close_btn"></button>
+
+					<div class="scroll">
+						<div class="cont row">
+							<a href="/" class="logo">
+								<img src="images/logo.svg" alt="">
+							</a>
+
+							<div class="col">
+								<div class="contacts">
+									<div class="phone">
+										<a href="tel:+74950211101">+7 495 021-11-01</a>
+									</div>
+
+									<div class="messengers">
+										<a href="/" target="_blank" rel="noopener nofollow" class="whatsapp_link">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+										</a>
+
+										<a href="/" target="_blank" rel="noopener nofollow" class="telegram_link">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+										</a>
+									</div>
+								</div>
+
+								<button class="callback_btn modal_btn" data-modal="callback_modal">ОБРАТНЫЙ ЗВОНОК</button>
+
+								<button class="order_btn modal_btn" data-modal="order_modal">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_service"></use></svg>
+									<span>Записаться<br> на сервис</span>
+								</button>
+							</div>
+
+							<div class="col">
+								<div class="location">
+									<div>Москва, ул. Василисы Кожиной, вл7А</div>
+
+									<div class="map_link">
+										<a href="/">
+											<span>Посмотреть на карте</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="times">
+									<div><b>ПН–ПТ</b> 09:00–21:00</div>
+									<div><b>СБ</b> 10:00–19:00</div>
+									<div><b>ВС</b> Выходной</div>
+								</div>
+							</div>
+
+							<nav class="menu row">
+								<div class="col">
+									<div class="modal_cont">
+										<button class="btn mini_modal_btn" data-modal-id="#services_modal">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+											<span>УСЛУГИ</span>
+										</button>
+
+										<div class="mini_modal" id="services_modal">
+											<div class="cont">
+												<ul>
+													<li><a href="/">Техническое обслуживание</a></li>
+													<li><a href="/">Комплексная диагностика</a></li>
+													<li><a href="/">Считывание кодов неисправностей компьютером</a></li>
+													<li><a href="/">Компьютерная диагностика</a></li>
+													<li><a href="/">Диагностика подвески</a></li>
+													<li><a href="/">Замена масла с масляным фильтром и с/у защиты картера</a></li>
+													<li><a href="/">Воздушный фильтр замена</a></li>
+													<li><a href="/">Салонный фильтр замена</a></li>
+													<li><a href="/">Топливный фильтр замена</a></li>
+													<li><a href="/">Передние тормозные колодки замена</a></li>
+													<li><a href="/">Задние тормозные колодки замена</a></li>
+													<li><a href="/">Тормозная жидкость замена</a></li>
+													<li><a href="/">Охлаждающая жидкость замена</a></li>
+													<li><a href="/">Свечи зажигания замена</a></li>
+													<li><a href="/">Масло в коробке частичная замена</a></li>
+													<li><a href="/">Мойка радиаторов со снятием переднего бампера</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div><a href="/">
+										<span>КОМПАНИЯ</span>
+									</a></div>
+
+									<div><a href="/">
+										<span>РАБОТЫ</span>
+									</a></div>
+								</div>
+
+								<div class="col">
+									<div><a href="/">
+										<span>АКЦИИ</span>
+									</a></div>
+
+									<div><a href="/">
+										<span>НОВОСТИ</span>
+									</a></div>
+
+									<div><a href="/">
+										<span>КОНТАКТЫ</span>
+									</a></div>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont row">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+						</a>
+
+						<div class="contacts">
+							<div class="phone">
+								<a href="tel:+74950211101">+7 495 021-11-01</a>
+							</div>
+
+							<div class="messengers">
+								<a href="/" target="_blank" rel="noopener nofollow" class="whatsapp_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow" class="telegram_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<button class="order_btn modal_btn" data-modal="order_modal">Записаться<br> на сервис</button>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a> <span class="sep">/</span>
+							<a href="/">Услуги</a> <span class="sep">/</span>
+							<span class="current">Замена масла в двигателе</span>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="services_slider">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="cont">
+									<div class="data">
+										<div class="title">Замена масла<br> в двигателе</div>
+
+										<div class="desc">Масло выполняет много необходимых функций. Оно смазывает подшипники, отводит тепло от нагревающихся авто деталей, оптимизирует работу гидравлической и других систем управления машиной. Качественные масла долго выполняет свои функции, но через какое-то время жидкость необходимо менять.</div>
+
+										<div class="price">от <span>1 200</span> руб.</div>
+
+										<div class="sep"></div>
+
+										<div class="duration">от <span>20</span> мин.</div>
+
+										<div class="link">
+											<a href="/">ЗАПИСАТЬСЯ НА СЕРВИС</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="image">
+									<img data-src="images/tmp/services_slider_img.jpg" alt="" class="swiper-lazy">
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="cont">
+									<div class="data">
+										<div class="title">Замена масла<br> в двигателе</div>
+
+										<div class="desc">Масло выполняет много необходимых функций. Оно смазывает подшипники, отводит тепло от нагревающихся авто деталей, оптимизирует работу гидравлической и других систем управления машиной. Качественные масла долго выполняет свои функции, но через какое-то время жидкость необходимо менять.</div>
+
+										<div class="price">от <span>1 200</span> руб.</div>
+
+										<div class="sep"></div>
+
+										<div class="duration">от <span>20</span> мин.</div>
+
+										<div class="link">
+											<a href="/">ЗАПИСАТЬСЯ НА СЕРВИС</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="image">
+									<img data-src="images/tmp/services_slider_img.jpg" alt="" class="swiper-lazy">
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="cont">
+									<div class="data">
+										<div class="title">Замена масла<br> в двигателе</div>
+
+										<div class="desc">Масло выполняет много необходимых функций. Оно смазывает подшипники, отводит тепло от нагревающихся авто деталей, оптимизирует работу гидравлической и других систем управления машиной. Качественные масла долго выполняет свои функции, но через какое-то время жидкость необходимо менять.</div>
+
+										<div class="price">от <span>1 200</span> руб.</div>
+
+										<div class="sep"></div>
+
+										<div class="duration">от <span>20</span> мин.</div>
+
+										<div class="link">
+											<a href="/">ЗАПИСАТЬСЯ НА СЕРВИС</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="image">
+									<img data-src="images/tmp/services_slider_img.jpg" alt="" class="swiper-lazy">
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-pagination"></div>
+					</div>
+
+					<img data-src="images/bg_main_slider.png" alt="" class="bg lazyload">
+				</section>
+
+
+				<section class="block">
+					<div class="cont">
+						<div class="text_block small">
+							<h1>Обновление базы автомобилей Н1</h1>
+
+							<p><b>DEOS — это ваш личный помощник, который берет на себя решение любых задач с вашим автомобилем. Заберем автомобиль, отвезем его в сервис, обслужим и вернем обратно готовым в удобные время и место.</b></p>
+
+							<p>Большой, современный, оснащенный всем необходимым оборудованием автосервис. Мы работаем со всеми марками и моделями авто, делаем любые виды работ и технического обслуживания. Все наши менеджеры специализируются на конкретных марках авто, все водители проходят тестирование на знание города, проверку службой безопасности и регулярно сдают экзамены на знание основ клиентского сервиса.</p>
+
+							<p>Регулярное техническое обслуживание — это неотъемлемая часть эксплуатации автомобиля. Каждый владелец знает, насколько важно своевременно и грамотно делать ТО. От этого в первую очередь зависит ресурс основных узлов и агрегатов, а также безопасность и удовольствие от вождения. Компания DEOS гарантирует бережное отношение, качество и высокий уровень сервиса при техническом обслуживании и диагностике вашего авто.</p>
+
+							<blockquote>Наши специалисты имеют многолетний опыт работы, а сервис обладает всем необходимым оборудованием для ежедневного обслуживания автомобилей: от массовых на каждый день, до спортивных и суперкаров.Также мы предоставляем полный перечень оригинальных запасных частей, необходимых вашему автомобилю.</blockquote>
+
+							<h2>Ремонт коробки передач H2</h2>
+
+							<div class="cols">
+								<div class="col">
+									<p>К сожалению, рано или поздно наступает момент, когда ресурс двигателя истощается и требуется его ремонт. Ежедневно мы занимаемся доработкой и усилением двигателей для увеличения мощности, поэтому выполнение ремонта двигателя для нас — это более простая и отработанная задача, чем для большинства сервисов. При возникновении любых проблем с двигателем — обращайтесь в DEOS.</p>
+
+									<p>Для многих результат выполнения сход-развала — это когда в распечатке были красные значения, а стали зеленые. При этом результат зависит от калибровки стенда — параметры могут быть в допусках, но машина не держит прямую.</p>
+								</div>
+
+								<div class="col">
+									<ul>
+										<li>Съем и установка МКПП</li>
+										<li>Ремонт МКПП</li>
+										<li>Покраска двери под толщиномер кузовной ремонт</li>
+										<li>Замена стекла</li>
+										<li>Покраска элементов кузова</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="slider swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="images/tmp/text_slider_thumb1.jpg" class="item fancy_img">
+											<div class="thumb">
+												<img data-src="images/tmp/text_slider_thumb1.jpg" alt="" class="swiper-lazy">
+											</div>
+										</a>
+									</div>
+
+									<div class="swiper-slide">
+										<a href="images/tmp/text_slider_thumb2.jpg" class="item fancy_img">
+											<div class="thumb">
+												<img data-src="images/tmp/text_slider_thumb2.jpg" alt="" class="swiper-lazy">
+											</div>
+										</a>
+									</div>
+
+									<div class="swiper-slide">
+										<a href="images/tmp/text_slider_thumb3.jpg" class="item fancy_img">
+											<div class="thumb">
+												<img data-src="images/tmp/text_slider_thumb3.jpg" alt="" class="swiper-lazy">
+											</div>
+										</a>
+									</div>
+
+									<div class="swiper-slide">
+										<a href="images/tmp/text_slider_thumb4.jpg" class="item fancy_img">
+											<div class="thumb">
+												<img data-src="images/tmp/text_slider_thumb4.jpg" alt="" class="swiper-lazy">
+											</div>
+										</a>
+									</div>
+
+									<div class="swiper-slide">
+										<a href="images/tmp/text_slider_thumb1.jpg" class="item fancy_img">
+											<div class="thumb">
+												<img data-src="images/tmp/text_slider_thumb1.jpg" alt="" class="swiper-lazy">
+											</div>
+										</a>
+									</div>
+
+									<div class="swiper-slide">
+										<a href="images/tmp/text_slider_thumb2.jpg" class="item fancy_img">
+											<div class="thumb">
+												<img data-src="images/tmp/text_slider_thumb2.jpg" alt="" class="swiper-lazy">
+											</div>
+										</a>
+									</div>
+
+									<div class="swiper-slide">
+										<a href="images/tmp/text_slider_thumb3.jpg" class="item fancy_img">
+											<div class="thumb">
+												<img data-src="images/tmp/text_slider_thumb3.jpg" alt="" class="swiper-lazy">
+											</div>
+										</a>
+									</div>
+
+									<div class="swiper-slide">
+										<a href="images/tmp/text_slider_thumb4.jpg" class="item fancy_img">
+											<div class="thumb">
+												<img data-src="images/tmp/text_slider_thumb4.jpg" alt="" class="swiper-lazy">
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="swiper-button-prev">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+								</div>
+
+								<div class="swiper-button-next">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+								</div>
+
+								<div class="swiper-pagination"></div>
+							</div>
+
+							<h3>Ремонт двигателя H3</h3>
+
+							<div class="cols">
+								<div class="col">
+									<a href="https://www.youtube.com/watch?v=R9Wvg6THqUk" class="video_link" data-fancybox>
+										<img src="images/tmp/video_thumb.jpg" alt="">
+									</a>
+								</div>
+
+								<div class="col">
+									<p>К сожалению, рано или поздно наступает момент, когда ресурс двигателя истощается и требуется его ремонт. Ежедневно мы занимаемся доработкой и усилением двигателей для увеличения мощности, поэтому выполнение ремонта двигателя для нас — это более простая и отработанная задача, чем для большинства сервисов. При возникновении любых проблем с двигателем — обращайтесь в DEOS.</p>
+
+									<p>Для многих результат выполнения сход-развала — это когда в распечатке были красные значения, а стали зеленые. При этом результат зависит от калибровки стенда — параметры могут быть в допусках, но машина не держит прямую.</p>
+
+									<ol class="columns">
+										<li>Съем и установка МКПП</li>
+										<li>Ремонт МКПП</li>
+										<li>Покраска двери под кузовной ремонт</li>
+										<li>Замена стекла</li>
+										<li>Покраска элементов кузова</li>
+										<li>Установка заводского давление в шинах</li>
+										<li>Проверка наличия груза в автомобиле</li>
+										<li>Установка руля по уровню</li>
+									</ol>
+								</div>
+							</div>
+
+
+							<div class="cols">
+								<div class="col">
+									<h4>Стоимость наших услуг H4</h4>
+
+									<div class="table_wrap">
+										<table>
+											<thead>
+												<tr>
+													<th>Наименование работ</th>
+													<th>Время</th>
+													<th>Цена</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												<tr>
+													<td>Охлаждающая жидкость замена</td>
+													<td class="nowrap">от 20 минут</td>
+													<td class="nowrap">от 1 200 руб.</td>
+												</tr>
+
+												<tr>
+													<td>Передние тормозные колодки замена</td>
+													<td class="nowrap">от 30 минут</td>
+													<td class="nowrap">от 1 800 руб.</td>
+												</tr>
+
+												<tr>
+													<td>Масло в коробке частичная замена</td>
+													<td class="nowrap">от 50 минут</td>
+													<td class="nowrap">от 2 300 руб.</td>
+												</tr>
+
+												<tr>
+													<td>Свечи зажигания замена</td>
+													<td class="nowrap">от 20 минут</td>
+													<td class="nowrap">от 1 200 руб.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="col">
+									<h4>Наши специалисты рекомендуют H4</h4>
+
+									<div class="quote">
+										<div class="photo">
+											<img data-src="images/tmp/quote_photo.jpg" alt="" class="lazyload">
+										</div>
+
+										<div>
+											<div class="text">Делимся с вами процессом работ. Автотехцентр DEOS большой, современный, оснащенный всем необходимым оборудованием. Мы работаем со всеми марками и моделями авто, делаем любые виды работ и технического обслуживания. 6 подъемников, технологичный сход-развал.</div>
+
+											<div class="author">
+												<div class="name">Иван Иванов</div>
+												<div class="post">Специалист сервиса</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<h3>Слайдер плюс текст H3</h3>
+
+							<div class="cols">
+								<div class="col">
+									<div class="single_slider">
+										<div class="swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="image">
+														<img src="images/tmp/text_single_slider_img.jpg" alt="">
+													</div>
+												</div>
+
+												<div class="swiper-slide">
+													<div class="image">
+														<img src="images/tmp/text_single_slider_img.jpg" alt="">
+													</div>
+												</div>
+
+												<div class="swiper-slide">
+													<div class="image">
+														<img src="images/tmp/text_single_slider_img.jpg" alt="">
+													</div>
+												</div>
+											</div>
+
+											<div class="controls">
+												<div class="swiper-button-prev">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+												</div>
+
+												<div class="swiper-button-next">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col aligncenter">
+									<p><b>Также мы выполняем сход-развал на автомобилях с пневматической или винтовой подвеской. Предоставляем услуги по кастом-настройке винтовой подвески, в том числе с настройкой развесовки по осям.</b></p>
+
+									<p>К сожалению, рано или поздно наступает момент, когда ресурс двигателя истощается и требуется его ремонт. Ежедневно мы занимаемся доработкой и усилением двигателей для увеличения мощности, поэтому выполнение ремонта двигателя для нас — это более простая и отработанная задача, чем для большинства сервисов. При возникновении любых проблем с двигателем — обращайтесь в DEOS.</p>
+
+									<p>Для многих результат выполнения сход-развала — это когда в распечатке были красные значения, а стали зеленые. При этом результат зависит от калибровки стенда — параметры могут быть в допусках, но машина не держит прямую.</p>
+								</div>
+							</div>
+
+							<div class="cols">
+								<div class="col aligncenter">
+									<p><b>Также мы выполняем сход-развал на автомобилях с пневматической или винтовой подвеской. Предоставляем услуги по кастом-настройке винтовой подвески, в том числе с настройкой развесовки по осям.</b></p>
+
+									<p>К сожалению, рано или поздно наступает момент, когда ресурс двигателя истощается и требуется его ремонт. Ежедневно мы занимаемся доработкой и усилением двигателей для увеличения мощности, поэтому выполнение ремонта двигателя для нас — это более простая и отработанная задача, чем для большинства сервисов. При возникновении любых проблем с двигателем — обращайтесь в DEOS.</p>
+
+									<p>Для многих результат выполнения сход-развала — это когда в распечатке были красные значения, а стали зеленые. При этом результат зависит от калибровки стенда — параметры могут быть в допусках, но машина не держит прямую.</p>
+								</div>
+
+								<div class="col">
+									<div class="single_slider">
+										<div class="swiper mask_left">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="image">
+														<img src="images/tmp/text_single_slider_img.jpg" alt="">
+													</div>
+												</div>
+
+												<div class="swiper-slide">
+													<div class="image">
+														<img src="images/tmp/text_single_slider_img.jpg" alt="">
+													</div>
+												</div>
+
+												<div class="swiper-slide">
+													<div class="image">
+														<img src="images/tmp/text_single_slider_img.jpg" alt="">
+													</div>
+												</div>
+											</div>
+
+											<div class="controls">
+												<div class="swiper-button-prev">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+												</div>
+
+												<div class="swiper-button-next">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<h3>Вопрос-ответ H3</h3>
+
+							<div class="faq accordion">
+								<div class="accordion_item active">
+									<div class="head">
+										<div class="title">Как узнать цену на замену масла?</div>
+
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+									</div>
+
+									<div class="data" style="display: block;">
+										<p>Масло выполняет много необходимых функций. Оно смазывает подшипники, отводит тепло от нагревающихся авто деталей, оптимизирует работу гидравлической и других систем  управления машиной. Качественные масла долго выполняет свои функции, но через какое-то время жидкость необходимо менять. Даже самое качественное масло после определенного  времени использования теряет свои характеристики и требует замены. Цена замены масла в АКПП зависит от модели автомобиля, перечня выполняемых работ.</p>
+									</div>
+								</div>
+
+								<div class="accordion_item">
+									<div class="head">
+										<div class="title">Что дает замена масла в коробке?</div>
+
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+									</div>
+
+									<div class="data">
+										<p>Масло выполняет много необходимых функций. Оно смазывает подшипники, отводит тепло от нагревающихся авто деталей, оптимизирует работу гидравлической и других систем  управления машиной. Качественные масла долго выполняет свои функции, но через какое-то время жидкость необходимо менять. Даже самое качественное масло после определенного  времени использования теряет свои характеристики и требует замены. Цена замены масла в АКПП зависит от модели автомобиля, перечня выполняемых работ.</p>
+									</div>
+								</div>
+
+								<div class="accordion_item">
+									<div class="head">
+										<div class="title">Как часто нужно менять свечи зажигания?</div>
+
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+									</div>
+
+									<div class="data">
+										<p>Масло выполняет много необходимых функций. Оно смазывает подшипники, отводит тепло от нагревающихся авто деталей, оптимизирует работу гидравлической и других систем  управления машиной. Качественные масла долго выполняет свои функции, но через какое-то время жидкость необходимо менять. Даже самое качественное масло после определенного  времени использования теряет свои характеристики и требует замены. Цена замены масла в АКПП зависит от модели автомобиля, перечня выполняемых работ.</p>
+									</div>
+								</div>
+
+								<div class="accordion_item">
+									<div class="head">
+										<div class="title">С какой периодичностью нужно проходить ТО?</div>
+
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+									</div>
+
+									<div class="data">
+										<p>Масло выполняет много необходимых функций. Оно смазывает подшипники, отводит тепло от нагревающихся авто деталей, оптимизирует работу гидравлической и других систем  управления машиной. Качественные масла долго выполняет свои функции, но через какое-то время жидкость необходимо менять. Даже самое качественное масло после определенного  времени использования теряет свои характеристики и требует замены. Цена замены масла в АКПП зависит от модели автомобиля, перечня выполняемых работ.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="articles block">
+					<div class="cont">
+						<div class="block_head center">
+							<div class="title">Новости</div>
+						</div>
+
+						<div class="row">
+							<a href="/" class="article">
+								<div class="thumb">
+									<img data-src="images/tmp/service_thumb1.jpg" alt="" class="lazyload">
+
+									<div class="date">18.02.2023</div>
+								</div>
+
+								<div class="name">Произвели обновление базы данных автомобилей и калибровку стэнда 3D сход-развала Hofmann.</div>
+							</a>
+
+							<a href="/" class="article">
+								<div class="thumb">
+									<img data-src="images/tmp/service_thumb2.jpg" alt="" class="lazyload">
+
+									<div class="date">06.02.2023</div>
+								</div>
+
+								<div class="name">Почему лучше выбрать автотехцентр DEOS?</div>
+							</a>
+
+							<a href="/" class="article">
+								<div class="thumb">
+									<img data-src="images/tmp/service_thumb3.jpg" alt="" class="lazyload">
+
+									<div class="date">29.01.2023</div>
+								</div>
+
+								<div class="name">Автотехцентр DEOS большой, современный, оснащенный всем необходимым оборудованием.</div>
+							</a>
+
+							<a href="/" class="article">
+								<div class="thumb">
+									<img data-src="images/tmp/service_thumb4.jpg" alt="" class="lazyload">
+
+									<div class="date">15.01.2023</div>
+								</div>
+
+								<div class="name">DEOS — «умный» автосервис. Как мы экономим ваше время?</div>
+							</a>
+						</div>
+					</div>
+
+					<img data-src="images/bg_articles_top.png" alt="" class="bg lazyload">
+					<img data-src="images/bg_articles_bottom.png" alt="" class="bg2 lazyload">
+				</section>
+
+
+				<section class="contacts_info">
+					<div class="cont row">
+						<div class="feedback">
+							<div class="title">Задать вопрос</div>
+
+							<form action="" class="form">
+								<div class="columns row">
+									<div class="line">
+										<div class="field">
+											<input type="text" name="" value="" class="input" placeholder="Ваше имя">
+										</div>
+									</div>
+
+									<div class="line">
+										<div class="field">
+											<input type="tel" name="" value="" class="input" placeholder="Телефон">
+										</div>
+									</div>
+								</div>
+
+								<div class="line">
+									<div class="field">
+										<textarea name="" placeholder="Ваше имя"></textarea>
+									</div>
+								</div>
+
+								<div class="file">
+									<div class="field">
+										<input type="file" name="file" id="file">
+										<label for="file">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_file"></use></svg>
+											<span>Прикрепить файл</span>
+										</label>
+									</div>
+								</div>
+
+								<div class="agree">
+									<div class="field">
+										<label class="checkbox">
+											<input type="checkbox" name="agree">
+
+											<div class="check"></div>
+
+											<div>Соглашаюсь на обработку моих персональных данных и принимаю <a href="/">Политику конфиденциальности</a></div>
+										</label>
+									</div>
+								</div>
+
+								<div class="submit">
+									<button type="submit" class="submit_btn">ОТПРАВИТЬ</button>
+								</div>
+							</form>
+						</div>
+
+						<div class="data">
+							<div class="title">Наши контакты</div>
+
+							<div class="phone">
+								<a href="tel:+74950211101">+7 495 021-11-01</a>
+							</div>
+
+							<div class="messengers">
+								<a href="/" target="_blank" rel="noopener nofollow" class="whatsapp_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow" class="telegram_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+								</a>
+							</div>
+
+							<div class="location">Москва, ул. Василисы Кожиной, вл7А</div>
+
+							<div class="times">
+								<div><b>ПН–ПТ</b> 09:00–21:00</div>
+								<div><b>СБ</b> 10:00–19:00</div>
+								<div><b>ВС</b> Выходной</div>
+							</div>
+
+							<div class="socials">
+								<a href="/" target="_blank" rel="noopener nofollow" class="vk_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_vk"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow" class="youtube_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_youtube"></use></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div id="map">
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AG4PP8d_j9xXV2Dc1-znlMU9mtRv3zVnO&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+					</div>
+
+					<img data-src="images/bg_contacts_img.png" alt="" class="bg lazyload">
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont row">
+					<div class="logo">
+						<img src="images/logo_light.svg" alt="">
+					</div>
+
+					<div class="menu row">
+						<div class="col">
+							<div><a href="/">
+								<span>УСЛУГИ</span>
+							</a></div>
+
+							<div><a href="/">
+								<span>КОМПАНИЯ</span>
+							</a></div>
+
+							<div><a href="/">
+								<span>РАБОТЫ</span>
+							</a></div>
+						</div>
+
+						<div class="col">
+							<div><a href="/">
+								<span>АКЦИИ</span>
+							</a></div>
+
+							<div><a href="/">
+								<span>НОВОСТИ</span>
+							</a></div>
+
+							<div><a href="/">
+								<span>КОНТАКТЫ</span>
+							</a></div>
+						</div>
+					</div>
+
+					<div class="copyright">&copy; 2023 ООО «Deos Запад»</div>
+
+					<div class="text">Все права защищены</div>
+
+					<div class="privacy_policy_link">
+						<a href="/">Политика конфиденциальности</a>
+					</div>
+
+					<div class="creator">
+						<a href="/">Создание сайта <span>Точка.ру</span></a>
+					</div>
+				</div>
+
+				<img data-src="images/bg_action_form.jpg" alt="" class="bg lazyload">
+			</footer>
+		</div>
+
+
+		<section class="modal" id="order_modal">
+			<div class="modal_title">Записаться на сервис</div>
+
+			<form action="" class="form">
+				<div class="columns row">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Ваше имя">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Телефон или E-mail">
+						</div>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<textarea name="" placeholder="Комментарий"></textarea>
+					</div>
+				</div>
+
+				<div class="agree">
+					<div class="field">
+						<label class="checkbox">
+							<input type="checkbox" name="agree">
+
+							<div class="check"></div>
+
+							<div>Соглашаюсь на обработку моих персональных данных и принимаю <a href="/">Политику конфиденциальности</a></div>
+						</label>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ОТПРАВИТЬ</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="callback_modal">
+			<div class="modal_title">Обратный звонок</div>
+
+			<form action="" class="form">
+				<div class="columns row">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Ваше имя">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="" value="" class="input" placeholder="Телефон">
+						</div>
+					</div>
+				</div>
+
+				<div class="agree">
+					<div class="field">
+						<label class="checkbox">
+							<input type="checkbox" name="agree">
+
+							<div class="check"></div>
+
+							<div>Соглашаюсь на обработку моих персональных данных и принимаю <a href="/">Политику конфиденциальности</a></div>
+						</label>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ОТПРАВИТЬ</button>
+				</div>
+			</form>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.6.3.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

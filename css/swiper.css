@@ -1,0 +1,153 @@
+.swiper-button-next,
+.swiper-button-prev
+{
+    color: #080808;
+
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+
+    width: 38px;
+    height: 54px;
+    margin: auto;
+
+    transition: color .2s linear;
+    transform: none;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.swiper-button-prev
+{
+    left: -110px;
+}
+
+.swiper-button-next
+{
+    right: -110px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after
+{
+    display: none;
+}
+
+
+.swiper-button-next .icon,
+.swiper-button-prev .icon
+{
+    display: block;
+
+    width: 18px;
+    height: 34px;
+}
+
+.swiper-button-next .icon
+{
+    transform: rotate(180deg);
+}
+
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover
+{
+    color: #d9d9d9;
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction
+{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 10px;
+    margin-left: -868px;
+
+    pointer-events: none;
+}
+
+
+.swiper-pagination-bullet
+{
+    position: relative;
+
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    transition: .2s linear;
+    pointer-events: auto;
+
+    opacity: 1;
+    border-radius: 50%;
+    background: #c8c8c8;
+}
+
+.swiper-pagination-bullet:after
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    width: 28px;
+    height: 28px;
+    margin: auto;
+
+    content: '';
+    transition: opacity .2s linear;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullet + .swiper-pagination-bullet
+{
+    margin-top: 40px !important;
+}
+
+
+.swiper-pagination-bullet:hover
+{
+    background: #f6e923;
+}
+
+.swiper-pagination-bullet.active
+{
+    background: #000;
+}
+
+.swiper-pagination-bullet.active:after
+{
+    opacity: 1;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}

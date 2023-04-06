@@ -1,0 +1,320 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 30px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 16px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding-left: 55px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .accordion_item .data
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        padding-left: 20px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 32px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .checkbox
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h1
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .text_block h2
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .text_block blockquote
+    {
+        line-height: 24px;
+
+        padding: 14px;
+    }
+
+
+    .text_block .quote .photo
+    {
+        margin-bottom: 24px;
+    }
+
+    .text_block .quote .photo + *
+    {
+        width: 100%;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .title
+    {
+        font-size: 32px;
+        line-height: 60px;
+    }
+
+    .main_slider .title span
+    {
+        font-size: 88px;
+        line-height: 60px;
+    }
+
+
+    .main_slider .desc
+    {
+        line-height: 22px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .stock .thumb
+    {
+        width: 220px;
+        height: 220px;
+
+        border-width: 10px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .title
+    {
+        font-size: 22px;
+    }
+
+
+    .action_form .form .line
+    {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+
+    .action_form .form .submit
+    {
+        width: 100%;
+        margin-top: 0;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .item
+    {
+        line-height: 22px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .row
+    {
+        margin-left: 0;
+    }
+
+    .services .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .services .service
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+    .services .bg
+    {
+        top: -32px;
+    }
+
+
+
+    /*------------------
+        Achievements
+    ------------------*/
+    .achievements .item
+    {
+        line-height: 22px;
+    }
+
+
+    .achievements .item .val
+    {
+        font-size: 50px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data .times
+    {
+        display: block;
+    }
+
+    .contacts_info .data .times > * + *
+    {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+
+
+    /*---------------------
+        Services slider
+    ---------------------*/
+    .services_slider .title
+    {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-left: 0;
+    }
+
+    .articles .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .articles .article
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        text-align: center;
+    }
+
+
+    footer .copyright
+    {
+        width: 100%;
+    }
+
+
+    footer .text,
+    footer .creator
+    {
+        width: 100%;
+        margin-top: 16px;
+
+        text-align: center;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 40px 24px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        padding-right: 40px;
+    }
+}

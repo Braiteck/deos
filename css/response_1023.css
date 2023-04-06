@@ -1,0 +1,665 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 16px;
+        --font_size_title: 36px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+
+        width: 325px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 0;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+
+        background: #fff;
+    }
+
+    header.show
+    {
+        transform: translateX(0);
+    }
+
+
+    header .scroll
+    {
+        display: flex;
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 24px 0;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        overscroll-behavior-y: contain;
+    }
+
+    header .scroll > *
+    {
+        width: 100%;
+    }
+
+
+    header .logo,
+    header .order_btn
+    {
+        display: none;
+    }
+
+
+    header .col
+    {
+        width: 100%;
+
+        order: 3;
+    }
+
+    header .col + .col
+    {
+        margin-top: 24px;
+    }
+
+
+    header .times
+    {
+        display: block;
+
+        order: 3;
+    }
+
+    header .times > * + *
+    {
+        margin-left: 0;
+    }
+
+
+
+    header .menu
+    {
+        margin-top: 0;
+        margin-bottom: 40px;
+
+        order: 1;
+    }
+
+
+    header .menu,
+    header .menu .col
+    {
+        display: block;
+    }
+
+
+    header .menu .col + .col,
+    header .menu .col > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    header .menu .mini_modal,
+    header .menu .mini_modal.active
+    {
+        position: relative;
+
+        display: none;
+
+        width: calc(100% + 48px);
+        margin: 24px -24px 0;
+        padding: 24px 0;
+
+        background: #f6e923;
+    }
+
+    header .menu .mini_modal:after,
+    header .menu .mini_modal:before
+    {
+        display: none;
+    }
+
+    header .menu .mini_modal.active
+    {
+        display: block;
+    }
+
+
+    header .menu ul
+    {
+        column-count: 1;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding-top: 20px;
+    }
+
+
+
+    .breadcrumbs
+    {
+        line-height: 20px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 24px;
+    }
+
+
+    .text_block h1
+    {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .text_block h2
+    {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .text_block h3
+    {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .text_block h4
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+
+    .text_block * + h2,
+    .text_block * + h3,
+    .text_block * + h4
+    {
+        margin-top: 60px;
+    }
+
+
+    .text_block blockquote
+    {
+        line-height: 26px;
+
+        padding: 24px;
+    }
+
+
+    .text_block .cols .col
+    {
+        width: 100%;
+    }
+
+    .text_block .cols .col + .col
+    {
+        margin-top: 40px;
+    }
+
+
+    .text_block .quote .photo + *
+    {
+        width: calc(100% - 200px);
+    }
+
+
+    .text_block .single_slider .controls
+    {
+        bottom: -8px;
+
+        transform: scale(.85);
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .data
+    {
+        width: 352px;
+    }
+
+
+    .main_slider .title
+    {
+        font-size: 40px;
+        line-height: 80px;
+    }
+
+    .main_slider .title span
+    {
+        font-size: 120px;
+        line-height: 80px;
+    }
+
+
+    .main_slider .desc
+    {
+        line-height: 24px;
+
+        margin-top: 16px;
+    }
+
+
+    .main_slider .image
+    {
+        margin-right: -760px;
+    }
+
+    .main_slider .image:before
+    {
+        background-position: -328px 0;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .stock
+    {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+
+    .stocks .stock .thumb
+    {
+        width: 188px;
+        height: 188px;
+        margin-bottom: 24px;
+    }
+
+    .stocks .stock .thumb img
+    {
+        width: calc(100% + 76px);
+        height: calc(100% + 52px);
+    }
+
+
+    .stocks .stock .thumb .btn
+    {
+        font-size: 12px;
+        line-height: 36px;
+
+        width: 120px;
+        height: 38px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form
+    {
+        padding: 48px 0;
+    }
+
+
+    .action_form .title
+    {
+        font-size: 26px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .action_form .form
+    {
+        width: 560px;
+    }
+
+
+    .action_form .form .submit
+    {
+        position: relative;
+        left: 0;
+
+        width: 33.333%;
+        margin-top: 24px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .action_form .form .submit_btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .advantages .item
+    {
+        line-height: 24px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .bg
+    {
+        top: -50px;
+
+        width: 75%;
+        height: auto;
+        min-height: 100px;
+    }
+
+
+    .services .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .services .service
+    {
+        line-height: 24px;
+    }
+
+
+
+    /*------------------
+        Achievements
+    ------------------*/
+    .achievements .item
+    {
+        line-height: 24px;
+    }
+
+
+    .achievements .item .val
+    {
+        font-size: 56px;
+    }
+
+
+    .achievements .item br
+    {
+        display: none;
+    }
+
+
+    .achievements .bg
+    {
+        margin-left: -600px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        padding-top: 24px;
+    }
+
+
+    .about_info .img1
+    {
+        position: relative;
+        left: 0;
+
+        width: 100%;
+        height: auto;
+        margin-top: 32px;
+    }
+
+
+    .about_info .block_head
+    {
+        margin-bottom: 32px;
+        margin-left: 0;
+    }
+
+    .about_info .block_head:before
+    {
+        top: -38px;
+
+        margin-right: -88px;
+    }
+
+
+    .block_head .title br
+    {
+        display: none;
+    }
+
+
+    .about_info .text_block
+    {
+        position: relative;
+        z-index: 5;
+
+        width: 100%;
+    }
+
+
+    .about_info .image
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .title
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .contacts_info .data
+    {
+        width: 100%;
+    }
+
+
+    .contacts_info .feedback
+    {
+        width: 100%;
+        margin-top: 40px;
+
+        order: 2;
+    }
+
+
+
+    /*---------------------
+        Services slider
+    ---------------------*/
+    .services_slider .data
+    {
+        width: 352px;
+    }
+
+
+    .services_slider .title
+    {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+
+    .services_slider .price,
+    .services_slider .duration,
+    .services_slider .sep
+    {
+        margin-top: 28px;
+    }
+
+
+    .services_slider .price span
+    {
+        font-size: 28px;
+    }
+
+
+    .services_slider .sep
+    {
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+
+
+    .services_slider .link a
+    {
+        margin-top: 24px;
+    }
+
+
+    .services_slider .image
+    {
+        margin-right: -760px;
+    }
+
+    .services_slider .image:before
+    {
+        background-position: -280px 0;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .bg
+    {
+        top: -20px;
+    }
+
+
+    .articles .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .articles .service
+    {
+        line-height: 24px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .menu
+    {
+        margin-bottom: 80px;
+    }
+
+
+    footer .col
+    {
+        width: calc(50% - 76px);
+    }
+
+
+    footer .creator
+    {
+        width: 100%;
+        margin-top: 12px;
+
+        text-align: right;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal_title
+    {
+        font-size: 28px;
+        line-height: 36px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .modal .form .line
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .modal .form .agree
+    {
+        margin-top: -8px;
+    }
+}
