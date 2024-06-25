@@ -21,6 +21,36 @@
 
 
 
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header .cont
+    {
+        padding: 0 12px;
+    }
+
+
+    .mob_header .logo img
+    {
+        height: 36px;
+    }
+
+
+    .mob_header .phone
+    {
+        font-size: 16px;
+    }
+
+
+    .mob_header .mob_menu_btn
+    {
+        width: 28px;
+        height: 28px;
+        margin-left: 20px;
+    }
+
+
+
     /*---------------
         Accordion
     ---------------*/

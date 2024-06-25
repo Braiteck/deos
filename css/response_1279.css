@@ -166,6 +166,26 @@
 
 
 
+    header.fixed .col
+    {
+        padding: 0;
+    }
+
+
+    header.fixed .order_btn
+    {
+        display: none;
+    }
+
+
+    header.fixed .menu .col + .col,
+    header.fixed .menu .col > * + *
+    {
+        margin-left: 32px;
+    }
+
+
+
     /*---------------
         Page head
     ---------------*/

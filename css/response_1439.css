@@ -133,9 +133,38 @@
 
 
 
-    /*-------------
-        Sidebar
-    -------------*/
+    header.fixed .col
+    {
+        padding-right: 232px;
+    }
+
+
+    header.fixed .menu .col + .col,
+    header.fixed .menu .col > * + *
+    {
+        margin-left: 38px;
+    }
+
+
+    header.fixed .menu .col > * > a,
+    header.fixed .menu .btn
+    {
+        font-size: 16px;
+    }
+
+
+    header.fixed .menu .col > * > a:before,
+    header.fixed .menu .btn:before
+    {
+        transform: scale(.8);
+    }
+
+
+    header .menu .col > * > a .icon,
+    header .menu .btn .icon
+    {
+        display: none;
+    }
 
 
 

@@ -113,14 +113,12 @@ input[type=number]
 ::selection
 {
     color: #333;
-
     background: #f6e924;
 }
 
 ::-moz-selection
 {
     color: #333;
-
     background: #f6e924;
 }
 
@@ -163,22 +161,17 @@ html.custom_scroll ::-webkit-scrollbar-thumb
     background-color: #f6e924;
 }
 
-html.custom_scroll
-{
-    scrollbar-color: #f6e924 var(--bg);
-    scrollbar-width: thin;
-}
-
 
 body
 {
-    color: var(--text_color);
     font: var(--font_size) var(--font_family);
 
     height: 100%;
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height:         fill-available;
+
+    color: var(--text_color);
 }
 
 body.menu_open
@@ -189,7 +182,6 @@ body.menu_open
 
 button
 {
-    color: inherit;
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
@@ -200,6 +192,7 @@ button
     cursor: pointer;
     vertical-align: top;
 
+    color: inherit;
     border: none;
     background: none;
 }
@@ -211,7 +204,7 @@ button
     z-index: 9;
 
     display: flex;
-    overflow: hidden;
+    overflow: clip;
     flex-direction: column;
 
     min-width: 375px;
@@ -224,9 +217,8 @@ button
 .main
 {
     display: flex;
-    flex-direction: column;
-
     flex: 1 0 auto;
+    flex-direction: column;
 }
 
 
@@ -257,11 +249,10 @@ button
 .row
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
@@ -307,12 +298,14 @@ button
 
 .fancybox__content > .carousel__button.is-close
 {
-    color: var(--text_color);
-
     top: 0;
     right: 0;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 158px;
     height: 73px;
@@ -321,13 +314,9 @@ button
 
     transition: color .2s linear;
 
+    color: var(--text_color);
     border-radius: 0;
     background: url(../images/bg_close_btn.png) 100% 0 no-repeat;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .modal.fancybox__content > .carousel__button.is-close svg
@@ -363,7 +352,6 @@ button
 
 .all_link a
 {
-    color: currentColor;
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
@@ -376,6 +364,8 @@ button
     vertical-align: top;
     text-decoration: none;
     text-transform: uppercase;
+
+    color: currentColor;
 }
 
 .all_link a:before
@@ -613,8 +603,6 @@ header .col
 
 header .logo
 {
-    color: currentColor;
-
     position: absolute;
     top: 0;
     right: 0;
@@ -627,6 +615,8 @@ header .logo
     margin: auto;
 
     text-decoration: none;
+
+    color: currentColor;
 }
 
 header .logo img
@@ -637,35 +627,43 @@ header .logo img
     height: 204px;
 }
 
+header .logo img + img
+{
+    display: none;
+
+    width: 130px;
+    height: 53px;
+}
+
 
 
 header .contacts
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
 
 header .phone
 {
-    color: #454545;
     font-size: 26px;
     font-weight: 300;
 
     letter-spacing: .03em;
+
+    color: #454545;
 }
 
 header .phone a
 {
-    color: currentColor;
-
     white-space: nowrap;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -673,29 +671,27 @@ header .phone a
 header .messengers
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-left: 14px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
 header .messengers a
 {
-    color: #ccc;
-
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     transition: color .2s linear;
     text-decoration: none;
 
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #ccc;
 }
 
 header .messengers a + a
@@ -742,7 +738,6 @@ header .callback_btn
 header .callback_btn:hover
 {
     color: #f6e923;
-
     background: var(--text_color);
 }
 
@@ -759,6 +754,10 @@ header .order_btn
     left: 370px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     width: 266px;
     height: 88px;
@@ -768,11 +767,6 @@ header .order_btn
     text-align: left;
 
     background: url(../images/bg_order_btn.svg) 0 0 no-repeat;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 header .order_btn .icon
@@ -788,7 +782,6 @@ header .order_btn .icon
 header .order_btn:hover
 {
     color: #f6e924;
-
     background: url(../images/bg_order_btn_h.svg) 0 0 no-repeat;
 }
 
@@ -796,17 +789,17 @@ header .order_btn:hover
 
 header .location
 {
-    color: #454545;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
 
     display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
+
+    color: #454545;
 }
 
 
@@ -820,28 +813,27 @@ header .location .map_link
 
 header .location .map_link a
 {
-    color: var(--text_color);
-
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     text-decoration: none;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: var(--text_color);
 }
 
 
 header .location .map_link .icon
 {
-    color: #f6e924;
-
     display: block;
 
     width: 17px;
     height: 22px;
     margin-left: 9px;
+
+    color: #f6e924;
 }
 
 
@@ -854,19 +846,19 @@ header .location .map_link a:hover
 
 header .times
 {
-    color: #454545;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 12px;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #454545;
 }
 
 header .times b
@@ -883,23 +875,22 @@ header .times > * + *
 
 header .menu
 {
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+
     width: 100%;
     margin-top: 60px;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
 }
 
 
 header .menu .col
 {
     display: flex;
-
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -912,21 +903,21 @@ header .menu .modal_cont
 header .menu .col > * > a,
 header .menu .btn
 {
-    color: currentColor;
     font-weight: 500;
     line-height: 100%;
 
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     text-decoration: none;
     letter-spacing: .03em;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 header .menu .col > * > a:before,
@@ -955,8 +946,6 @@ header .menu .btn:before
 header .menu .col > * > a .icon,
 header .menu .btn .icon
 {
-    color: #f6e924;
-
     display: block;
 
     width: 20px;
@@ -964,6 +953,8 @@ header .menu .btn .icon
     margin-right: 14px;
 
     transition: color .2s linear;
+
+    color: #f6e924;
 }
 
 
@@ -1085,12 +1076,12 @@ header .menu li:before
 
 header .menu li a
 {
-    color: currentColor;
-
     display: inline-block;
 
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 header .menu li a:hover
@@ -1100,12 +1091,199 @@ header .menu li a:hover
 
 
 
+header.fixed
+{
+    position: fixed;
+
+    margin: 0;
+    padding: 9px 0;
+
+    -webkit-animation: moveDown .5s;
+            animation: moveDown .5s;
+
+    background: #f5f5f5;
+    box-shadow: 0 4px 4px 0 rgba(190, 190, 190, .25);
+}
+
+
+header.fixed .logo
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 130px;
+    height: 53px;
+    margin: 0;
+
+    transform: none;
+}
+
+
+header.fixed .logo img
+{
+    display: none;
+}
+
+header.fixed .logo img + img
+{
+    display: block;
+}
+
+
+header.fixed .col
+{
+    position: relative;
+
+    order: 2;
+
+    width: auto;
+    padding-right: 252px;
+}
+
+header.fixed .col + .col
+{
+    display: none;
+}
+
+
+header.fixed .phone
+{
+    font-size: 17px;
+    font-weight: 500;
+
+    letter-spacing: 0;
+
+    color: #000;
+}
+
+
+header.fixed .callback_btn
+{
+    line-height: 24px;
+
+    width: 100%;
+    margin-top: 0;
+    padding: 0 8px;
+
+    letter-spacing: -.36px;
+}
+
+
+header.fixed .order_btn
+{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: normal;
+
+    top: -5px;
+    right: 0;
+    left: auto;
+
+    justify-content: center;
+
+    width: 225px;
+    height: 53px;
+    padding: 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    background: url(../images/bg_order_btn2.svg) 0 0 no-repeat;
+}
+
+
+header.fixed .order_btn:hover
+{
+    color: #f6e924;
+    background: url(../images/bg_order_btn2_h.svg) 0 0 no-repeat;
+}
+
+
+header.fixed .order_btn .icon
+{
+    display: none;
+}
+
+
+header.fixed .messengers
+{
+    display: none;
+}
+
+
+header.fixed .menu
+{
+    align-self: center;
+
+    width: auto;
+    margin: 0;
+}
+
+
+header.fixed .menu .col
+{
+    position: static;
+
+    padding: 0;
+}
+
+
+header.fixed .menu .col + .col
+{
+    display: flex;
+}
+
+
+header.fixed .menu .col + .col,
+header.fixed .menu .col > * + *
+{
+    margin-left: 64px;
+}
+
+
+header.fixed .menu .mini_modal,
+header.fixed .menu .mini_modal.active
+{
+    margin-top: 9px;
+}
+
+
+@-webkit-keyframes moveDown
+{
+    0%
+    {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+}
+
+@-moz-keyframes moveDown
+{
+    0%
+    {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+}
+
+@keyframes moveDown
+{
+    0%
+    {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+}
+
+
+
 /*-----------------
     Mob. header
 -----------------*/
 .mob_header
 {
-    position: relative;
+    position: sticky;
     z-index: 9;
     top: 0;
     left: 0;
@@ -1121,29 +1299,29 @@ header .menu li a:hover
 
 .mob_header .cont
 {
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 
 .mob_header .logo
 {
-    color: currentColor;
-
     display: block;
 
     margin-right: auto;
 
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .mob_header .logo img
 {
     display: block;
 
-    width: 64px;
+    height: 44px;
 }
 
 
@@ -1151,30 +1329,30 @@ header .menu li a:hover
 .mob_header .contacts
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
 
 .mob_header .phone
 {
-    color: #454545;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 300;
 
     letter-spacing: .03em;
+
+    color: #454545;
 }
 
 .mob_header .phone a
 {
-    color: currentColor;
-
     white-space: nowrap;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -1182,34 +1360,26 @@ header .menu li a:hover
 .mob_header .messengers
 {
     display: flex;
-
-    margin-left: 16px;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-left: 22px;
 }
 
 
 .mob_header .messengers a
 {
-    color: #ccc;
-
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    transition: .2s linear;
     text-decoration: none;
 
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-.mob_header .messengers a + a
-{
-    margin-left: 13px;
+    color: #2cb742;
 }
 
 
@@ -1217,38 +1387,19 @@ header .menu li a:hover
 {
     display: block;
 
-    width: 20px;
-    height: 20px;
-}
-
-.mob_header .messengers .telegram_link .icon
-{
-    width: 23px;
-}
-
-
-
-.mob_header .order_btn
-{
-    font-size: 13px;
-    font-weight: 500;
-
-    margin-left: 24px;
-    padding: 8px 20px;
-
-    text-transform: uppercase;
-
-    border-radius: 8px;
-    background: #f6e923;
+    width: 32px;
+    height: 32px;
 }
 
 
 
 .mob_header .mob_menu_btn
 {
-    color: currentColor;
-
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 44px;
     height: 34px;
@@ -1256,10 +1407,7 @@ header .menu li a:hover
     margin-left: 20px;
     padding: 8px;
 
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #828282;
 }
 
 
@@ -1311,18 +1459,19 @@ header .menu li a:hover
 
 .breadcrumbs
 {
-    color: #888;
     font-size: 14px;
     font-weight: 300;
     line-height: 34px;
+
+    color: #888;
 }
 
 
 .breadcrumbs a
 {
-    color: var(--text_color);
-
     text-decoration: none;
+
+    color: var(--text_color);
 }
 
 .breadcrumbs a:hover
@@ -1333,8 +1482,6 @@ header .menu li a:hover
 
 .breadcrumbs .sep
 {
-    color: #d8d8d8;
-
     display: inline-block;
 
     width: 6px;
@@ -1342,6 +1489,8 @@ header .menu li a:hover
     margin: 0 16px;
 
     vertical-align: top;
+
+    color: #d8d8d8;
 }
 
 
@@ -1403,9 +1552,8 @@ header .menu li a:hover
 
 .form ::-moz-placeholder
 {
-    color: var(--form_placeholder_color);
-
     opacity: 1;
+    color: var(--form_placeholder_color);
 }
 
 .form :-ms-input-placeholder
@@ -1442,7 +1590,6 @@ header .menu li a:hover
 
 .form .input
 {
-    color: var(--text_color);
     font-family: var(--font_family);
     font-size: 16px;
 
@@ -1454,6 +1601,7 @@ header .menu li a:hover
 
     transition: border-color .2s linear;
 
+    color: var(--text_color);
     border: 1px solid var(--form_border_color);
     border-radius: var(--form_border_radius);
     background: var(--form_bg_color);
@@ -1467,7 +1615,6 @@ header .menu li a:hover
 
 .form textarea
 {
-    color: var(--text_color);
     font-family: var(--font_family);
     font-size: 16px;
 
@@ -1480,6 +1627,7 @@ header .menu li a:hover
     resize: none;
     transition: border-color .2s linear;
 
+    color: var(--text_color);
     border: 1px solid var(--form_border_color);
     border-radius: var(--form_border_radius);
     background: var(--form_bg_color);
@@ -1518,13 +1666,12 @@ header .menu li a:hover
     line-height: 22px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     cursor: pointer;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -1563,23 +1710,23 @@ header .menu li a:hover
 
 .form .checkbox
 {
-    color: #888;
     font-size: 14px;
     line-height: 24px;
 
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 24px;
     padding-left: 33px;
 
     cursor: pointer;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #888;
 }
 
 
@@ -1628,9 +1775,9 @@ header .menu li a:hover
 
 .form .checkbox a
 {
-    color: var(--text_color);
-
     text-decoration: none;
+
+    color: var(--text_color);
 }
 
 .form .checkbox a:hover
@@ -1647,7 +1794,6 @@ header .menu li a:hover
 
 .form .submit_btn
 {
-    color: #fff;
     font-size: 16px;
 
     height: 50px;
@@ -1656,6 +1802,7 @@ header .menu li a:hover
     transition: .2s linear;
     text-transform: uppercase;
 
+    color: #fff;
     border: 1px solid rgb(246, 233, 36);
     border-radius: 8px;
 }
@@ -1663,7 +1810,6 @@ header .menu li a:hover
 .form .submit_btn:hover
 {
     color: #f6e924;
-
     border-color: var(--text_color);
     background: var(--text_color);
 }
@@ -1797,14 +1943,13 @@ header .menu li a:hover
 .text_block .cols
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     margin-top: 60px;
     margin-bottom: 60px;
-
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .text_block .cols .col
@@ -2001,11 +2146,10 @@ header .menu li a:hover
 
     display: none !important;
     flex-direction: row;
+    justify-content: center;
 
     width: 100%;
     height: 10px;
-
-    justify-content: center;
 }
 
 .text_block .slider .swiper-pagination-bullet + .swiper-pagination-bullet
@@ -2017,11 +2161,11 @@ header .menu li a:hover
 
 .text_block .slider .item
 {
-    color: currentColor;
-
     display: block;
 
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -2130,11 +2274,10 @@ header .menu li a:hover
     line-height: 22px;
 
     display: flex;
-
-    justify-content: space-between;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -2244,6 +2387,10 @@ header .menu li a:hover
     left: 50px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 260px;
     height: 103px;
@@ -2252,11 +2399,6 @@ header .menu li a:hover
     padding-right: 60px;
 
     background: url(../images/bg_slider_controls.png) 0 0 no-repeat;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -2332,13 +2474,14 @@ header .menu li a:hover
 
 .main_slider .title span
 {
-    color: #f6e924;
     font-size: 180px;
     line-height: 124px;
 
     margin-left: -14px;
 
     letter-spacing: .05em;
+
+    color: #f6e924;
 }
 
 
@@ -2461,11 +2604,10 @@ header .menu li a:hover
 
     display: none !important;
     flex-direction: row;
+    justify-content: center;
 
     width: 100%;
     height: 10px;
-
-    justify-content: center;
 }
 
 .stocks .swiper-pagination-bullet + .swiper-pagination-bullet
@@ -2477,7 +2619,6 @@ header .menu li a:hover
 
 .stocks .stock
 {
-    color: currentColor;
     font-size: 24px;
     line-height: 34px;
 
@@ -2485,6 +2626,8 @@ header .menu li a:hover
 
     text-align: center;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -2493,6 +2636,10 @@ header .menu li a:hover
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 388px;
     height: 388px;
@@ -2501,11 +2648,6 @@ header .menu li a:hover
     transition: border-color .2s linear;
 
     border: 10px solid #f6e924;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -2528,7 +2670,6 @@ header .menu li a:hover
 
 .stocks .stock .thumb .btn
 {
-    color: #fff;
     font-size: 16px;
     line-height: 46px;
 
@@ -2542,6 +2683,7 @@ header .menu li a:hover
     transition: .2s linear;
     text-transform: uppercase;
 
+    color: #fff;
     border: 1px solid rgb(246, 233, 36);
     border-radius: 8px;
 
@@ -2563,7 +2705,6 @@ header .menu li a:hover
 .stocks .stock:hover .thumb .btn
 {
     color: var(--text_color);
-
     background: #f6e924;
 }
 
@@ -2611,7 +2752,6 @@ header .menu li a:hover
 
 .action_form .title
 {
-    color: #fff;
     font-size: 30px;
     font-weight: 600;
     line-height: 100%;
@@ -2620,6 +2760,8 @@ header .menu li a:hover
 
     text-align: center;
     letter-spacing: .05em;
+
+    color: #fff;
 }
 
 
@@ -2628,14 +2770,13 @@ header .menu li a:hover
     position: relative;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     width: 760px;
     margin: 0 auto;
-
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
@@ -2662,12 +2803,12 @@ header .menu li a:hover
 ----------------*/
 .advantages .row
 {
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+
     margin-bottom: -24px;
     margin-left: -24px;
-
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
 }
 
 .advantages .row > *
@@ -2683,13 +2824,12 @@ header .menu li a:hover
     line-height: 28px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 
     white-space: nowrap;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
 }
 
 
@@ -2744,12 +2884,13 @@ header .menu li a:hover
 
 .services .service
 {
-    color: currentColor;
     line-height: 28px;
 
     display: block;
 
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -2804,7 +2945,6 @@ header .menu li a:hover
 
 .services .service .thumb .btn
 {
-    color: #fff;
     font-size: 16px;
     line-height: 46px;
 
@@ -2819,6 +2959,7 @@ header .menu li a:hover
     text-transform: uppercase;
 
     opacity: 0;
+    color: #fff;
     border: 1px solid rgb(246, 233, 36);
     border-radius: 8px;
 
@@ -2828,7 +2969,6 @@ header .menu li a:hover
 .services .service .thumb .btn:hover
 {
     color: var(--text_color);
-
     background: #f6e924;
 }
 
@@ -3186,14 +3326,13 @@ header .menu li a:hover
 .contacts_info .data
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     width: 704px;
     margin-left: auto;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -3216,13 +3355,13 @@ header .menu li a:hover
 
 .contacts_info .form .submit_btn
 {
-    color: var(--text_color);
     font-size: 16px;
     font-weight: 500;
 
     height: 50px;
     padding: 0 20px;
 
+    color: var(--text_color);
     border-radius: 8px;
     background: #f6e924;
 }
@@ -3230,7 +3369,6 @@ header .menu li a:hover
 .contacts_info .form .submit_btn:hover
 {
     color: #f6e924;
-
     border-color: var(--text_color);
     background: var(--text_color);
 }
@@ -3239,19 +3377,20 @@ header .menu li a:hover
 
 .contacts_info .data .phone
 {
-    color: #454545;
     font-size: 26px;
     font-weight: 300;
 
     letter-spacing: .03em;
+
+    color: #454545;
 }
 
 .contacts_info .data .phone a
 {
-    color: currentColor;
-
     white-space: nowrap;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -3259,29 +3398,27 @@ header .menu li a:hover
 .contacts_info .data .messengers
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-left: 26px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
 .contacts_info .data .messengers a
 {
-    color: #ccc;
-
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     transition: color .2s linear;
     text-decoration: none;
 
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #ccc;
 }
 
 .contacts_info .data .messengers a + a
@@ -3313,33 +3450,34 @@ header .menu li a:hover
 
 .contacts_info .data .location
 {
-    color: #454545;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
 
     width: 100%;
     margin-top: 40px;
+
+    color: #454545;
 }
 
 
 
 .contacts_info .data .times
 {
-    color: #454545;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     width: 100%;
     margin-top: 12px;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #454545;
 }
 
 .contacts_info .data .times b
@@ -3360,15 +3498,14 @@ header .menu li a:hover
     z-index: 3;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     height: 59px;
     margin-top: 44px;
     padding: 0 19px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .contacts_info .data .socials:before
@@ -3391,12 +3528,12 @@ header .menu li a:hover
 
 .contacts_info .data .socials a
 {
-    color: currentColor;
-
     display: block;
 
     transition: color .2s linear;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .contacts_info .data .socials a + a
@@ -3488,14 +3625,13 @@ header .menu li a:hover
 .services_slider .data
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     width: 696px;
     max-width: 100%;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -3568,7 +3704,6 @@ header .menu li a:hover
 
 .services_slider .link a
 {
-    color: currentColor;
     font-size: 16px;
     font-weight: 500;
     line-height: 50px;
@@ -3583,6 +3718,7 @@ header .menu li a:hover
     letter-spacing: .05em;
     text-transform: uppercase;
 
+    color: currentColor;
     border-radius: 8px;
     background: #f6e924;
 }
@@ -3681,7 +3817,6 @@ header .menu li a:hover
 
 .articles .article
 {
-    color: currentColor;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -3689,6 +3824,8 @@ header .menu li a:hover
     display: block;
 
     text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -3802,12 +3939,52 @@ header .menu li a:hover
 
 
 
+/*--------------------
+    Mob. order btn
+--------------------*/
+.mob_order_btn
+{
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+
+    background: #f5f5f5;
+}
+
+
+.mob_order_btn .btn
+{
+    font-size: 11px;
+    font-weight: 500;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 225px;
+    height: 53px;
+    margin: 0 auto;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    background: url(../images/bg_order_btn2.svg) 0 0 no-repeat;
+}
+
+
+
 /*------------
     Footer
 ------------*/
 footer
 {
-    color: #fff;
     font-size: 14px;
     line-height: 22px;
 
@@ -3818,6 +3995,7 @@ footer
 
     letter-spacing: .03em;
 
+    color: #fff;
     background: #292929;
 }
 
@@ -3860,8 +4038,6 @@ footer .col
 
 footer .logo
 {
-    color: currentColor;
-
     position: absolute;
     top: -35px;
     right: 0;
@@ -3874,6 +4050,8 @@ footer .logo
     margin: auto;
 
     text-decoration: none;
+
+    color: currentColor;
 }
 
 footer .logo img
@@ -3888,42 +4066,41 @@ footer .logo img
 
 footer .menu
 {
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+
     width: 100%;
     margin-bottom: 72px;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
 }
 
 
 footer .menu .col
 {
     display: flex;
-
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
 footer .menu a
 {
-    color: currentColor;
     font-weight: 500;
     line-height: 100%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     transition: color .2s linear;
     text-decoration: none;
     letter-spacing: .03em;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: currentColor;
 }
 
 footer .menu a:hover,
@@ -3948,10 +4125,10 @@ footer .privacy_policy_link
 
 footer .privacy_policy_link a
 {
-    color: currentColor;
-
     transition: color .2s linear;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 footer .privacy_policy_link a:hover
@@ -3971,15 +4148,13 @@ footer .creator
 
 footer .creator a
 {
-    color: currentColor;
-
     text-decoration: none;
+
+    color: currentColor;
 }
 
 footer .creator a span
 {
-    color: #f6e923;
-
     display: inline-block;
 
     padding: 0 3px;
@@ -3987,13 +4162,13 @@ footer .creator a span
     transition: .2s linear;
     vertical-align: top;
 
+    color: #f6e923;
     border-radius: 4px;
 }
 
 footer .creator a:hover span
 {
     color: var(--text_color);
-
     background: #f6e923;
 }
 
@@ -4004,8 +4179,6 @@ footer .creator a:hover span
 -----------*/
 .modal
 {
-    color: var(--text_color);
-
     display: none;
     visibility: visible !important;
 
@@ -4013,6 +4186,7 @@ footer .creator a:hover span
     max-width: 100%;
     padding: 60px;
 
+    color: var(--text_color);
     border: 10px solid #f6e924;
     background: #fff;
 }
@@ -4042,13 +4216,13 @@ footer .creator a:hover span
 
 .modal .form .submit_btn
 {
-    color: var(--text_color);
     font-size: 16px;
     font-weight: 500;
 
     height: 50px;
     padding: 0 20px;
 
+    color: var(--text_color);
     border-radius: 8px;
     background: #f6e924;
 }
@@ -4056,7 +4230,6 @@ footer .creator a:hover span
 .modal .form .submit_btn:hover
 {
     color: #f6e924;
-
     border-color: var(--text_color);
     background: var(--text_color);
 }

@@ -19,9 +19,9 @@
         bottom: -32px;
         left: 0;
 
-        width: 100%;
-
         justify-content: center;
+
+        width: 100%;
     }
 
 
@@ -63,15 +63,24 @@
     /*-----------------
         Mob. header
     -----------------*/
-    .mob_header .contacts
+    .mob_header .phone
     {
-        display: none;
+        font-size: 18px;
+        font-weight: 400;
+
+        letter-spacing: 0;
+
+        color: #000;
     }
 
 
-    .mob_header .order_btn
+    .mob_header .mob_menu_btn
     {
-        padding: 6px 16px;
+        width: 30px;
+        height: 30px;
+        margin-right: 0;
+        margin-left: 22px;
+        padding: 0;
     }
 
 
@@ -588,7 +597,7 @@
     ------------*/
     footer
     {
-        padding: 48px 0 24px;
+        padding: 48px 0 74px;
     }
 
 

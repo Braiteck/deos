@@ -26,6 +26,27 @@
 
 
 
+    header.fixed .col
+    {
+        padding-right: 240px;
+    }
+
+
+    header.fixed .menu .col + .col,
+    header.fixed .menu .col > * + *
+    {
+        margin-left: 44px;
+    }
+
+
+    header.fixed .menu .col > * > a,
+    header.fixed .menu .btn
+    {
+        font-size: 18px;
+    }
+
+
+
     /*----------------
         Block head
     ----------------*/
