@@ -173,6 +173,22 @@
     }
 
 
+    header .menu .col > * > a,
+    header .menu .btn
+    {
+        display: inline-block;
+
+        vertical-align: top;
+    }
+
+
+    header .menu .col > * > a:before,
+    header .menu .btn:before
+    {
+        transform: scale(.8);
+    }
+
+
 
     /*-----------------
         Mob. header
