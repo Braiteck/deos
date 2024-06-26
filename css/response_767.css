@@ -673,3 +673,17 @@
         width: 100%;
     }
 }
+
+
+
+@media print,
+(max-width: 575px)
+{
+    /*--------------------
+        Mob. order btn
+    --------------------*/
+    .mob_order_btn
+    {
+        display: block;
+    }
+}

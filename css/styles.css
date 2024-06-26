@@ -952,9 +952,9 @@ header .menu .btn .icon
     height: 14px;
     margin-right: 14px;
 
-    transition: color .2s linear;
+    /* transition: color .2s linear;
 
-    color: #f6e924;
+    color: #f6e924; */
 }
 
 
