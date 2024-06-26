@@ -142,7 +142,7 @@
     header.fixed .menu .col + .col,
     header.fixed .menu .col > * + *
     {
-        margin-left: 38px;
+        margin-left: 32px;
     }
 
 
@@ -157,13 +157,6 @@
     header.fixed .menu .btn:before
     {
         transform: scale(.8);
-    }
-
-
-    header .menu .col > * > a .icon,
-    header .menu .btn .icon
-    {
-        display: none;
     }
 
 

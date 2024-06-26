@@ -1273,6 +1273,12 @@ header.fixed .menu .mini_modal.active
 }
 
 
+header.fixed .menu .mini_modal .invisible_line
+{
+    height: 25px;
+}
+
+
 @-webkit-keyframes moveDown
 {
     0%
@@ -3977,6 +3983,8 @@ header.fixed .menu .mini_modal.active
 
     width: 100%;
     padding: 8px;
+
+    background: rgba(245, 245, 245, .90);
 }
 
 

@@ -201,7 +201,7 @@
     header.fixed .menu .col + .col,
     header.fixed .menu .col > * + *
     {
-        margin-left: 32px;
+        margin-left: 28px;
     }
 
 
