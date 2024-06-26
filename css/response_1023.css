@@ -173,12 +173,9 @@
     }
 
 
-    header .menu .col > * > a,
-    header .menu .btn
+    header .menu .col > *
     {
-        display: inline-block;
-
-        vertical-align: top;
+        display: flex;
     }
 
 
